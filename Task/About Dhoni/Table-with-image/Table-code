@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Table with image </title>
+        <link rel="icon" href="./_small-4-column-2-row-table.png">
+    </head>
+    <center>
+        <table>
+            <tr>
+                <td><img src="../" alt="">
+    </center>

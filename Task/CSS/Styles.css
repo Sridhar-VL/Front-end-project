@@ -1,0 +1,26 @@
+.button-container {
+    text-align: center;
+    background-color: white;
+    }
+
+button {
+    width: 200px;
+    color: white;
+    font-size:larger;
+    }
+
+.pink-button {
+    background-color:rgb(243, 83, 136);
+    
+}
+
+.green-button {
+    background-color: green;
+}
+
+.blue-button {
+    background-color:blue;
+}.button-container {
+    text-align: center;
+    
+}

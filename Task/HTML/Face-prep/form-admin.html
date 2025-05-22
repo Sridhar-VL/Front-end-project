@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Admission Form</title>
+</head>
+<body bgcolor="lightblue">
+
+  <h2>New Admission Form</h2>
+
+  <form onsubmit="alert('registered Successfully 🎉 !!!...')">
+    
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Full Name"><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" placeholder=""><br><br>
+
+    
+    <label>Gender:</label><br>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other<br><br>
+
+  
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="example123@gmail.com"><br><br>
+
+    
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="9877456321"><br><br>
+
+  
+    <label for="course">Select Course:</label><br>
+    <select id="course" name="course">
+      <option value="bca">BCA</option>
+      <option value="bsc">B.Sc</option>
+      <option value="bcom">B.Com</option>
+      <option value="ba">BA</option>
+      <option value="bba">BBA</option>
+      <option value="aids">AIDS</option>
+      <option value="aiml">AIML</option>
+    </select><br><br>
+
+    
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+
+</body>
+</html>

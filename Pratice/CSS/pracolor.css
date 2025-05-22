@@ -1,0 +1,23 @@
+#heading3{
+    color: red;
+}
+#heading4{
+    border: 2px solid red;
+    background-color: red;
+    border-radius: 5px;
+}
+#blue{
+    color: blue;
+}
+#brother-of-blue{
+    border-color: blue;
+    background-color: blue;
+    border-radius: 5px;
+}
+#Child{
+    border: 2px solid black;
+    border-radius: 15px;
+}
+#Color-change{
+    color: yellow;
+}

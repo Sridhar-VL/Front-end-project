@@ -1,0 +1,129 @@
+body {
+  background-color: #7f5555;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+
+.uber {
+  background-color: #000;
+  color: white;
+  opacity: 0.9;
+}
+.uber:hover {
+  opacity: 1;
+  cursor: pointer;
+  background-color: grey;
+}
+
+
+.amazon {
+  background-color: #f7ca00;
+  color: black;
+  font-weight: bold;
+  border-radius: 30px;
+}
+.amazon:hover {
+
+  background-color: rgb(255, 255, 0);
+}
+
+
+.github {
+  background-color: #2ea44f;
+  color: white;
+  
+}
+.github:hover {
+  background-color: #279644;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+.bootstrap {
+    color:white;
+    background-color: purple;
+    border: none;
+    padding:10px 20px;
+    border-radius:5px;
+    width:120px;
+
+}
+.bootstrap:hover{
+     cursor:pointer;
+     background-color: rgb(51, 2, 51);
+     transition-duration: 0.15s;
+     opacity:0.15s;
+
+}
+.bootstrap-outline {
+ color:rgb(81, 79, 79);
+ background-color: white;
+ border: 2px solid grey;
+ padding:10px 20px;
+ border-radius:5px;
+ width:120px;
+ height:40px;
+ margin-left:10px;
+ font-weight:bold;
+            
+
+}
+.bootstrap-outline:hover{
+     cursor:pointer;
+     background-color:rgb(68, 67, 67);
+     color:white;
+     transition-duration: 0.15s;
+
+}
+
+.linkedin {
+  color:white;
+  background-color:#023E8A; 
+  border:1px solid black;
+  padding:10px 20px;
+  border-radius: 25px;
+  width:250px;
+  font-weight:bold;
+  font-size:15px;
+  margin-left:10px;
+}
+.linkedin:hover{
+    cursor: pointer;
+    background-color:#03045E;
+    transition-duration: 0.15s;
+
+}
+.linkedin-outline {
+ color:#023E8A;
+ background-color: white;
+ border:1px solid blue;
+ padding:10px 20px;
+ border-radius: 25px;
+ width:80px;
+ font-weight:bold;
+ font-size:15px;
+ margin-left:10px;
+ height:40px;
+}
+.linkedin-outline:hover{
+     cursor: pointer;
+     background-color:rgb(144, 207, 246);;
+     border:1px solid darkblue;
+     transition-duration: 0.15s;
+}

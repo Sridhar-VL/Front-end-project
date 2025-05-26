@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 2rem;
+  background: #fefefe;
+}
+
+.juice-container, .toys-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.juice-card {
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  text-align: center;
+}
+
+.mango {
+  background-color: #fcd595;
+}
+
+.orange {
+  background-color: #fdb7a1;
+}
+
+.berry {
+  background-color: #e7d4f9;
+  border: 2px solid #a25ac4;
+}
+
+.berry-text {
+  color: #6a0dad;
+}
+
+.juice-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.toy-card {
+  width: 150px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.toy-image {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  border-radius: 8px;
+}
+
+.teddy {
+  background-color: #a5d8ff;
+  
+}
+
+.doll {
+  background-color: #f7a7c2;
+}
+
+.car {
+  background-color: #ffc75f;
+}
+
+.price {
+  color: green;
+  font-weight: bold;
+}

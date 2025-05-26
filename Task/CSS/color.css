@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+.color-container {
+  background-color: #f0f0f0;
+  width: 400px;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.color-box {
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+.red {
+  background-color: #E53935;
+}
+
+.blue {
+  background-color: #1E88E5;
+}
+
+.green {
+  background-color: #43A047;
+}
+
+.purple {
+  background-color: #8E24AA;
+}
+
+.orange {
+  background-color: #FB8C00;
+}

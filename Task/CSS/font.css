@@ -1,0 +1,167 @@
+.Tahoma{
+    font-family: Tahoma;
+    font-weight: bolder;
+    font-size: larger;
+}
+.verdana{
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0;
+}
+.p1{
+  font-family: Verdana; 
+  color: grey;
+  font-size: 14px;
+  margin: 0;
+}
+.development{
+    font-family:Verdana;
+    font-weight:100px;
+    width: 280px ;
+
+}
+.button{
+    background-color: rgb(1, 117, 1);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 80px;
+    height: 25px;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: rgb(8, 211, 8);
+  transition-duration: 0.15s;
+}
+.arial{
+    font-family: Arial;
+    font-size: x-large;
+    font-weight: bolder;
+    margin: 0;
+}
+.arial-description{
+    margin: 0;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 16px;
+    color: rgb(199, 3, 3);
+}
+.arial1{ 
+    text-align: center;
+    font-family: Arial ;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+.arial1-description{
+    text-align: center;
+    font-family: Arial ;
+    font-size: 16px;
+    margin: 2px;
+}
+.arial-link{
+    text-align: center;
+    color: rgb(8, 46, 144);
+}
+.arial-link:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.new{
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    color: rgb(212, 139, 2);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform:capitalize;
+}
+.title{
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0px;
+}
+.main {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+    }
+.price {
+      font-family: Verdana, sans-serif;
+      text-align: center;
+      color: rgb(32, 32, 32);
+      font-size: 14px;
+    }
+.buy {
+      font-family: Verdana, sans-serif;
+      background-color: royalblue;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .price {
+        font-family: Verdana, sans-serif;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .currency {
+        font-family: Verdana, sans-serif;
+      color: gray;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+    .today {
+        font-family: Verdana, sans-serif;
+      color: green;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    .after-hours {
+        font-family: Verdana, sans-serif;
+      color: gray;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+.after-hours .red {
+    font-family: Verdana, sans-serif;
+      color: red;
+    }
+     .header {
+        font-family: Verdana, sans-serif;
+      font-weight: bold;
+    }
+
+     .handle {
+        font-family: Verdana, sans-serif;
+      color: gray;
+      font-weight: normal;
+    }
+
+    .time {
+        font-family: Verdana, sans-serif;
+      color: gray;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+     .tweet {
+        font-family: Verdana, sans-serif;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .tweet a {
+        font-family: Verdana, sans-serif;
+      color: #1DA1F2; /* Twitter blue */
+      text-decoration: none;
+    }

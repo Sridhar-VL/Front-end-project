@@ -1,0 +1,78 @@
+.body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff5ed;
+  color: #3e2c23;
+  margin: 0;
+  padding: 0;
+}
+
+.omelette {
+  background-color: #ffffff;
+  margin: 20px auto;
+  padding: 20px 30px;
+  width:700px;
+  height:1800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0,0,0.1);
+}
+
+.recipe{
+   width: 600px;
+   border-radius: 10px;
+   height: 300px
+}
+
+h1, h2, h3 {
+  font-family: 'Georgia', serif;
+}
+
+.p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  
+
+}
+
+.prep-time{
+  background-color: #FCEDF2;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  
+}
+
+ul, ol {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+ td {
+  padding: 16px;
+  text-align: center;
+  border-bottom: 2px solid #b8b6b6;
+}
+td:last-child{
+    font-weight:bold;
+    color:saddlebrown
+}
+h2{
+    color:brown;
+}
+ol li::marker{
+    color:brown;
+    font-weight: bold;
+}
+ul li::marker{
+    color: brown;
+    font-weight: bold;
+}

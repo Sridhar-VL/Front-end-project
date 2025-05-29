@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container { 
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto auto auto;
+      gap: 10px;
+      width: 600px;
+      border: 2px solid gray;
+      padding: 10px;
+    }
+
+    .header {
+      grid-column: 1 / 3;
+      background-color: #3fa9f5;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .main-content {
+      background-color: #66bb44;
+      padding: 40px 20px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .sidebar {
+      background-color: #b666d2;
+      padding: 40px 20px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .twin {
+      background-color: #f7931e;
+      padding: 40px 20px;
+      color: white;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .footer {
+      grid-column: 1 / 3;
+      background-color: #0365b4;
+      padding: 20px;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">.header</div>
+    <div class="main-content">.main-content</div>
+    <div class="sidebar">.sidebar</div>
+    <div class="twin">.twin</div>
+    <div class="twin">.twin</div>
+    <div class="footer">.footer</div>
+  </div>
+
+</body>
+</html>

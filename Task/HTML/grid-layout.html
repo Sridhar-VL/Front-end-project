@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid-Layout</title>
+  <style>
+    body {
+      
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 8px;
+      width: 600px;
+    }
+
+    .box {
+      background-color: #9acd32;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      padding: 12px 0;
+      border-radius: 4px;
+    }
+    .b1 
+     {
+         grid-column: span 12;
+         }
+
+    .b2
+      { 
+        grid-column: span 6; 
+    }
+    .b3 
+     { 
+        grid-column: span 6; 
+    }
+    .b4, .b5, .b6
+     { 
+        grid-column: span 4;
+     }
+    .b7, .b8, .b9, .b10
+     {
+         grid-column: span 3; 
+        }
+    .b11, .b12, .b13, .b14, .b15, .b16
+    { 
+        grid-column: span 2;
+     }
+    .b17, .b18, .b19, .b20, .b21, .b22,
+    .b23, .b24, .b25, .b26, .b27, .b28 
+    { 
+        grid-column: span 1; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box b1">1</div>
+    <div class="box b2">2</div>
+    <div class="box b3">3</div>
+    <div class="box b4">4</div>
+    <div class="box b5">5</div>
+    <div class="box b6">6</div>
+    <div class="box b7">7</div>
+    <div class="box b8">8</div>
+    <div class="box b9">9</div>
+    <div class="box b10">10</div>
+    <div class="box b11">11</div>
+    <div class="box b12">12</div>
+    <div class="box b13">13</div>
+    <div class="box b14">14</div>
+    <div class="box b15">15</div>
+    <div class="box b16">16</div>
+    <div class="box b17">17</div>
+    <div class="box b18">18</div>
+    <div class="box b19">19</div>
+    <div class="box b20">20</div>
+    <div class="box b21">21</div>
+    <div class="box b22">22</div>
+    <div class="box b23">23</div>
+    <div class="box b24">24</div>
+    <div class="box b25">25</div>
+    <div class="box b26">26</div>
+    <div class="box b27">27</div>
+    <div class="box b28">28</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color Grid Layout</title>
+  <style>
+    body {
+  font-family: sans-serif;
+  background-color: #2a7bd2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.main-div {
+  background-color: #fce1c8;
+  padding: 20px;
+  border: 2px solid #f19999;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  margin-top: 200px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-auto-rows: 100px;
+  gap: 10px;
+  height: 500px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.box {
+  border-radius: 5px;
+ 
+}
+
+.small {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.large {
+  grid-row: span 2;
+  grid-column: span 1;
+}
+
+.tall {
+  grid-row: span 2;
+}
+
+.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.teal {
+  background-color: #117a8b;
+}
+
+.orange {
+  background-color: #f4a300;
+}
+
+.pink {
+  background-color: #f72585;
+}
+
+.cyan {
+  background-color: #3edbd3;
+}
+.hold{
+     height: 180px;
+}
+  </style>
+</head>
+<body>
+  <div class="main-div">
+    <div class="grid">
+      <div class="box teal large"></div>
+      <div class="box orange small"></div>
+      <div class="box teal small"></div>
+      <div class="box pink small"></div>
+      <div class="box cyan tall"></div>
+      <div class="box cyan small"></div>
+      <div class="box teal small "></div>
+      <div class="box orange tall hold"></div>
+      <div class="box pink big hold"></div>
+    </div>
+  </div>
+
+</body>
+</html>

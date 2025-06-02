@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout Replication</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 60px);
+      grid-template-rows: repeat(4, 60px);
+      gap: 5px;
+      background-color: black;
+    }
+
+    .box {
+      background-color: rgb(116, 114, 114);
+    }
+
+
+    .b1 {
+         grid-column: 1; grid-row: 1;
+         }
+    .b2 { 
+        grid-column: 2; grid-row: 1; 
+    }
+    .b3 {
+         grid-column: 3; grid-row: 1;
+         }
+    
+    .b4 { 
+        grid-column: 1; grid-row: 2;
+     }
+    .b5 { 
+        grid-column: 2; grid-row: 2; 
+    }
+    .b6 { 
+        grid-column: 3; grid-row: 2; 
+    }
+    
+    .b7 {
+         grid-column: 1; grid-row: 3;
+         }
+    .b8 { 
+        grid-column: 3; grid-row: 3; 
+    }
+    .b9 { 
+        grid-column: 4; grid-row: 2;
+     }
+    
+    .b10 { 
+        grid-column: 1; grid-row: 4;
+     }
+    .b11 {
+         grid-column: 3; grid-row: 4;
+         }
+    .b12 {
+         grid-column: 4; grid-row: 3; 
+        }
+    .b13 {
+         grid-column: 4; grid-row: 4; 
+        }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="box b1"></div>
+    <div class="box b2"></div>
+    <div class="box b3"></div>
+    <div class="box b4"></div>
+    <div class="box b5"></div>
+    <div class="box b6"></div>
+    <div class="box b7"></div>
+    <div class="box b8"></div>
+    <div class="box b9"></div>
+    <div class="box b10"></div>
+    <div class="box b11"></div>
+    <div class="box b12"></div>
+    <div class="box b13"></div>
+  </div>
+</body>
+</html>

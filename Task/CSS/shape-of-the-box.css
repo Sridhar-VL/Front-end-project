@@ -1,0 +1,44 @@
+*{
+    justify-content: center;
+    align-items: center;
+    
+}
+.table{
+    border: 2px  whitesmoke;
+    background-color: whitesmoke;
+}
+.div{
+    width:200px;
+    height:150px;
+    border:2px solid black;
+    background-color: purple;
+    padding:25px;
+    margin:5px 20px;
+}
+.div1{
+    width:200px;
+    height: 200px;
+    border:2px solid black ;
+    background-color:green;
+    margin: 25px 20px;
+    padding: 10px;
+    margin-top: 44px;
+}
+.div2{
+    width:150px;
+    height:250px;
+    border:2px solid black;
+    background-color: rgb(255, 217, 0);
+    padding: 20px;
+    margin: 20px 20px;
+    margin-top: 110px;
+}
+.div3{
+    width:180px;
+    height:300px;
+    border:2px solid black;
+    background-color: red;
+    padding: 20px;
+    margin: 20px 20px;
+    margin-top: 160px;
+}

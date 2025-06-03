@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: url('../../My\ Photo.jpg') no-repeat center/cover;
+  color: white;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  max-width: 600px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+  background-color: #ff3366;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff004c;
+}

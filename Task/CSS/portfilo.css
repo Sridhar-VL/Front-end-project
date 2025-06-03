@@ -35,16 +35,16 @@ p {
   margin-bottom: 30px;
 }
 
-.btn {
+.button {
   text-decoration: none;
   color: white;
   background-color: #ff3366;
   padding: 10px 20px;
   border-radius: 8px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s;
 }
 
-.btn:hover {
+.button:hover {
   background-color: #ff004c;
 }

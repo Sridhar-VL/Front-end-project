@@ -1,127 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Navigation Web Page</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: #fff;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      font-size: 50px;
-      font-weight: bold;
-      color: #000;
-      margin-left: 0;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: #777;
-      font-size: 14px;
-      transition: color 0.3s;
-    }
-
-    .nav-links a:hover {
-      color: #000;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      padding: 20px;
-    }
-
-    .image,
-    .image2 {
-      width: 100%;
-      height: 85%;
-      object-fit: cover;
-    }
-
-    .bottom {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 20px;
-    }
-
-    .images {
-      width: 100%;
-      max-width: 480px;
-      height: auto;
-      object-fit: cover;
-      flex: 1 1 300px;
-    }
-
-    
-    @media (max-width: 1024px) {
-      .logo {
-        font-size: 40px;
-      }
-
-      .nav-links a {
-        font-size: 13px;
-      }
-    }
-
-   
-    @media (max-width: 768px) {
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-      }
-
-      .logo {
-        margin-left: 0;
-      }
-
-      .nav-links {
-        flex-direction: column;
-        gap: 10px;
-      }
-
-      .container {
-        grid-template-columns: 1fr;
-      }
-
-      .bottom {
-        flex-direction: column;
-      }
-
-      .images {
-        max-width: 100%;
-      }
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Navigation-Web-Page</title>
+  <link rel="stylesheet" href="../CSS/web.css" />
 </head>
 <body>
-
-  <nav class="navbar">
-    <div class="logo">W.</div>
+  <div class="navbar">
+    <div class="logo"><h1>W.</h1></div>
     <div class="nav-links">
       <a href="#">Home</a>
       <a href="#">New</a>
@@ -129,17 +15,72 @@
       <a href="#">Trending</a>
       <a href="#">Categories</a>
     </div>
-  </nav>
-
-  <div class="container">
-    <img src="../Table-with-image/img/IMG_0602.jpg" class="image" alt="Future 1">
-    <img src="../HTML/Amazon-Bookstore/Atomic Habits.jpg" class="image2" alt="Future 2">
-  </div>
-  <div class="bottom">
-    <img src="../HTML/Amazon-Bookstore/The Magic of Thinking Big.jpg" class="images" alt="Bottom 1">
-    <img src="../Restaurant/Restaurant.jpg" class="images" alt="Bottom 2">
-    <img src="../Table-with-image/img/IMG_3838.jpg" class="images" alt="Bottom 3">
   </div>
 
+  <div class="main-content">
+    <div class="left">
+      <img src="./Web 3.O.jpeg" class="main-img" >
+       <div class="highlight-section">
+        <div class="text-left">
+          <h1>The Bright<br>Future of<br>Web 3.0?</h1>
+        </div>
+        <div class="text-right">
+          <p>
+            We dive into the next evolution of the web that<br>
+            claims to put the power of the platforms back<br>
+            into the hands of the people. But is it really<br>
+            fulfilling its promise?
+          </p>
+          <button>READ MORE</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="right">
+      <h1 class="new-title">New</h1>
+      <div class="block">
+        <h3>Hydrogen VS Electric Cars</h3>
+        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      </div>
+      <hr>
+      <div class="block">
+        <h3>The Downsides of AI Artistry</h3>
+        <p>What are the possible adverse effects of on-demand AI image generation?</p>
+      </div>
+      <hr>
+      <div class="block">
+        <h3>Is VC Funding Drying Up?</h3>
+        <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="bottom-row">
+    <div class="card">
+      <img src="./retro-pc.jpeg" >
+      <div class="card-text">
+        <span class="number">01</span>
+        <h4>Reviving Retro PCs</h4>
+        <p>What happens when old PCs are given modern upgrades?</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./laptop-keyword.jpeg" />
+      <div class="card-text">
+        <span class="number">02</span>
+        <h4>Top 10 Laptops of 2022</h4>
+        <p>Our best picks for various needs and budgets.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./gaming-images.jpeg">
+      <div class="card-text">
+        <span class="number">03</span>
+        <h4>The Growth of Gaming</h4>
+        <p>How the pandemic has sparked fresh opportunities.</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

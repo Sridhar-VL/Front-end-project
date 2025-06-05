@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Bar</title>
+  <style>
+    body{
+        padding:20px;
+        font-family: serif;
+         height: 100vh;
+  background: url('./IMG_3816.jpg') no-repeat center/cover;
+  color: rgb(251, 248, 248);
+    }
+    #google-container{
+        font-family: 'Google Sans';
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        font-size: 100px;
+        margin-top: 300px;
+    }
+  .search-container{
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 45px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position:static;
+     background-color: white;
+ }
+ .search-container input[type="text"]{
+    border: none;
+    outline: none;
+    flex: 1;
+    background: transparent;
+ }
+ .search-container button{
+    border: none;
+    background: none;
+
+ }
+ .search-container button img{
+    width:30px;
+    height: 30px;
+    
+  }
+  .hover:search-container button img {
+     cursor: pointer;
+  }
+  </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <h1 id="google-container">Google</h1>
+  <div class="search-container">
+    <button type="submit">
+      <img src="./search.png" alt="Search">
+    </button>
+    <input type="text" placeholder="Search Google or type a URL">
+     <button type="submit">
+      <img src="./google.png" alt="Search">
+      <img src="./google-img.png" alt="">
+    </button>
+  </div>
+</body>
+</html>

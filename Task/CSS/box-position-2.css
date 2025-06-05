@@ -1,0 +1,65 @@
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #eee;
+    }
+
+    h1 {
+      margin: 20px 0;
+    }
+    p{
+        font-size: 32px;
+        font-weight: bold;
+    }
+
+    .container {
+      position: relative;
+      width: 550px;
+      height: 600px;
+      margin: 0 auto;
+      background-color: white;
+    }
+
+    .box {
+      position: absolute;
+      width: 130px;
+      height: 130px;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 12px;
+    }
+
+    .red {
+      background-color: darkred;
+      top: 0;
+      left: 0;
+    }
+
+    .green {
+      background-color: green;
+      top: 0;
+      right: 0;
+    }
+
+    .blue {
+      background-color: blue;
+      bottom: 0;
+      left: 0;
+    }
+
+    .purple {
+      background-color: purple;
+      bottom: 0;
+      right: 0;
+    }
+
+    .center {
+      background-color: #555;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }

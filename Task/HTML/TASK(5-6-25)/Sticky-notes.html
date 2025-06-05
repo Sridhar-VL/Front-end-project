@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sticky Navbar</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #333;
+      padding: 10px;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-right: 20px;
+      padding: 8px 12px;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+      border-radius: 4px;
+    }
+
+    .section {
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="section">
+    <h2>Welcome</h2>
+    <p>This is a sticky navbar demo. Scroll down to see it stick!</p>
+  </div>
+
+  <div class="section">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et.</p>
+  </div>
+
+  <div class="section">
+    <h2>Services</h2>
+    <p>More content here to make sure scrolling works nicely.</p>
+  </div>
+
+  <div class="section">
+    <h2>Portfolio</h2>
+    <p>Even more content to stretch the page!</p>
+  </div>
+
+  <div class="section">
+    <h2>Contact</h2>
+    <p>Now scroll back up and see the navbar is still there 💫🌟</p>
+  </div>
+  </div>
+
+</body>
+</html>

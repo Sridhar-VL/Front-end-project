@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Over Image</title>
+  <style>
+    body{
+      background-color: rgb(190, 188, 188);
+      display:flex;
+    }
+    .container {
+      border: 10px solid black;
+      position: relative;
+      width: 300px;
+    }
+
+    .container img {
+      width: 100%;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .text-over {
+      position: absolute;
+      bottom:0;
+      right:0;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+}
+  </style>
+</head>
+<body>
+  
+
+  <div class="container">
+    <img src="../gaming-images.jpeg" alt="Image">
+    <div class="text">
+    <div class="text-over">Gaming Time 🎮</div>
+    <div>
+  </div>
+
+</body>
+</html>

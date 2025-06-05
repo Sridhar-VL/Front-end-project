@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Combined page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7fb;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      z-index: 1000;
+    }
+    .navbar img{
+        height:35px;
+        width:40px;
+        margin:10px auto;
+        margin-bottom: 0;
+    }
+
+    .navbar .logo {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 14px;
+    }
+
+    .navbar a:hover {
+      color: #ff9800;
+    }
+
+    
+    .hero {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    
+    .card {
+      background-color: white;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #0077cc;
+    }
+
+    .features ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .features li::before {
+      content: '✔';
+      margin-right: 10px;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="navbar">
+    <div class="logo">MDN</div>
+    <div class="nav-links">
+      <a href="#">About</a>
+      <a href="#">Features</a>
+      <a href="#">Contact</a>
+      <img src="./notification-badge.png">
+    </div>
+  </div>
+
+  
+  <div class="hero">
+    <h1>Welcome All</h1>
+    <p>This is a simple, modern and responsive landing page with a sticky navbar, a chatbot, and real-time notification alerts!</p>
+  </div>
+
+  
+  <div class="card">
+    <h3>About Us</h3>
+    <p>
+      We help students learn front-end development with practical exercises and real-time applications like search bars, badges, and chatbots.
+      Our tutorials are made with love and simplicity.
+    </p>
+  </div>
+
+  <div class="card features">
+    <h3>Features</h3>
+    <ul>
+      <li>Sticky Navigation Bar</li>
+      <li>Live Notification Icon</li>
+      <li>Chatbot Integration</li>
+    </ul>
+  </div>
+
+</body>
+</html>

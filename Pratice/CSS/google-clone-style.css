@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: #fff;
+  color: #202124;
+}
+
+.nav-bar {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.nav-bar li {
+  margin-left: 20px;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.nav-bar :hover{
+    text-decoration:underline;
+}
+
+.sign-in {
+  background-color: #1a73e8;
+  color:white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+ .logo {
+  margin-top: 100px;
+  font-size: 92px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.logo .blue {
+  color: #4285F4;
+}
+
+.logo .red {
+  color: #DB4437;
+}
+
+.logo .yellow {
+  color: #F4B400;
+}
+
+.logo .green {
+  color: #0F9D58;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 45px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position:static;
+    background-color: white;
+}
+
+.search-form input[type="text"] {
+  border: none;
+    outline: none;
+    flex: 1;
+    background: transparent;
+}
+.search-form  button img{
+    width:30px;
+    height: 30px;
+    
+  }
+  .search-form button{
+    border:none;
+    background: none;
+    cursor: pointer;
+  }
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons input[type="submit"] {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttons input[type="submit"]:hover {
+  border: 1px solid #c6c6c6;
+  text-decoration: underline;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-top: 1px solid #e4e4e4;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  font-size: 14px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+}
+
+footer li {
+  margin: 0 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #5f6368;
+}

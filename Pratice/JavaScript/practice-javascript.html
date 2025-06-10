@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Demo</title>
+    <link rel="icon" href="./images/demo-icon.jpeg">
+  </head>
+  <body>
+    <h1>Welcome to My Page</h1>
+    <script>
+      let count = 10;
+      count = 15;
+      console.log(count);
+
+      const gravity = 9.8;
+      console.log(gravity);
+
+      count = "15";
+      console.log(typeof count);
+
+      let rate = Number(8);
+      console.log(typeof rate);
+
+      rate = "20";
+      console.log(rate + rate);
+      console.log(typeof rate);
+      console.log(typeof count);
+      console.log(count + count);
+
+      Math.floor();
+      Math.ceil();
+
+      function greet(user) {
+        let message = `Hello ${user}, thanks for visiting!`;
+        return message;
+      }
+
+      function multiply(x, y) {
+        return x * y;
+      }
+
+      console.log(greet("Anu"));
+      console.log(greet("Vikram"));
+
+      const showMessage = () => {
+        return;
+      };
+
+      const total = (x, y) => x + y;
+
+      console.log(`Total is: ${total(5, 7)}`);
+
+      let animals = ["lion", "tiger", "elephant", "zebra"];
+      console.log(animals[0]);
+      console.log(animals[1]);
+      console.log(animals[2]);
+      console.log(animals);
+
+      animals.push("giraffe");
+      console.log(animals);
+      console.log(animals.slice(1, 4));
+      console.log("Index of zebra is: " + animals.indexOf("zebra"));
+
+      const info = {
+        type: "data",
+        status: "active",
+      };
+
+      const employee = {
+        fullName: "Nisha",
+        color: "Blue",
+        team: "HR",
+      };
+
+      console.log(employee.fullName);
+      console.log(employee.color);
+      employee.mobile = "9876512345";
+      employee["email"] = "nisha@example.com";
+      console.log(employee);
+    </script>
+    <button onclick="window.alert('Button clicked!')">Submit</button>
+  </body>
+</html>

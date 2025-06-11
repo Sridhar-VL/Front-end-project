@@ -50,7 +50,7 @@ button{
 
 }
 button:hover{
-    background-color: rgb(15, 14, 14);
+    background-color: rgb(190, 139, 139);
     color:rgb(15, 15, 15);
     border:1px solid rgb(0, 0, 0);
 }

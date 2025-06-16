@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Landing Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e4e9ec, #c8d2dc);
+      padding: 30px;
+      color: #111;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 800;
+    }
+    .letter-n{
+      width: 20px;
+    }
+
+    .search-bar input {
+      padding: 10px 15px;
+      border-radius: 25px;
+      border: none;
+      width: 300px;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .main-section {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      margin-top: 40px;
+      gap: 30px;
+    }
+
+    .left {
+      background: #f6f9fb;
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .left h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .left p {
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .left button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 30px;
+      background: #c1ff00;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .right img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .footer .box {
+      background: #f0f2f5;
+      padding: 20px;
+      border-radius: 15px;
+      flex: 1;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .popular-colors {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .color-circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .red { background: #ff4d4f; }
+    .green { background: #52c41a; }
+    .blue { background: #1890ff; }
+    .orange { background: #fa8c16; }
+    .cyan { background: #13c2c2; }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="logo"><img src="./letter-n.png" alt="N" class="letter-n"> nitec.</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products...">
+      </div>
+      <div class="profile">
+        <span>❤️</span>
+        <span>Ryman Alex</span>
+        <img src="./boy img.jpg" style="border-radius: 50%; width: 20px;">
+      </div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main-section">
+      <div class="left">
+        <div>
+          <small>🎵 Music is Classic</small>
+          <h1>Sequoia Inspiring Musico.</h1>
+          <p>Clear Sounds - Making your dream music come true. Stay with Sequoia Sounds!</p>
+          <button>View All Products</button>
+        </div>
+        <div>
+          <img src="./headphone.jpg" alt="Blue Headphone" style="max-width: 300px;">
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <strong>Popular Colors</strong>
+          <div class="popular-colors">
+            <span class="color-circle red"></span>
+            <span class="color-circle green"></span>
+            <span class="color-circle blue"></span>
+            <span class="color-circle orange"></span>
+            <span class="color-circle cyan"></span>
+          </div>
+        </div>
+        <img src="./Airpods.jpg" alt="New Gen X-Bud">
+        <img src="./VR-heading.jpg" alt="VR Headset">
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+      <div class="box">
+        <p>More Products</p>
+        <small>460+ items</small>
+      </div>
+      <div class="box">
+        <p>5M+ Downloads</p>
+        <small>⭐⭐⭐⭐⭐</small>
+      </div>
+      <div class="box">
+        <p>New Headphones Released</p>
+        <small>Top Picks</small>
+      </div>
+      <div class="box">
+        <p>Boosted Bass</p>
+        <small>Best Audio Experience</small>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

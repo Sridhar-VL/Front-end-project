@@ -1,0 +1,26 @@
+body {
+  background: #22C1C3;
+background: linear-gradient(354deg, rgba(34, 193, 195, 1) 0%, rgba(255, 202, 87, 1) 93%) repeat-x cover;
+text-align: center;
+} 
+h1{
+    font-family: "Bodoni Moda SC", serif;
+    font-weight: bolder;
+    text-align: center;
+}
+.head-tails{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+button{
+    width: 150px;
+    height: 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+button:hover{
+    box-shadow: 2px 2px 14px rgb(96, 95, 95);
+}

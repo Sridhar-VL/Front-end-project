@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f0f0;
+    }
+
+    .game {
+      display: none;
+    }
+
+    .game img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    .game h2 {
+      margin-top: 10px;
+    }
+
+    /* Desktop */
+    .desktop {
+      display: block;
+    }
+
+    /* Laptop */
+    @media (max-width: 1200px) {
+      .game {
+        display: none;
+      }
+      .laptop {
+        display: block;
+      }
+    }
+
+    /* Tablet */
+    @media (max-width: 900px) {
+      .game {
+        display: none;
+      }
+      .tablet {
+        display: block;
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .game {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="game desktop">
+   <a href="https://www.callofduty.com/"> <img src="./Games with responsive/COD.jpeg" alt="Call of Duty"></a>
+    <h2>🎮 Best Game for Desktop: Call of Duty</h2>
+  </div>
+
+  <div class="game laptop">
+   <a href="https://www.minecraft.net/en-us"><img src="Games with responsive/Minecraft.jpeg" alt="Minecraft"></a> 
+    <h2>🧱 Minecraft Game for Laptop</h2>
+  </div>
+
+  <div class="game tablet">
+   <a href="https://pubg.com/en/main"><img src="./Games with responsive/pubg.jpeg" alt="PUBG"></a> 
+    <h2>🪂 PUBG Game for Tablet</h2>
+  </div>
+
+  <div class="game mobile">
+   <a href="https://ff.garena.com/en"> <img src="./Games with responsive/free-fire.jpeg" alt="Free Fire"></a> 
+    <h2>🔥 Free Fire Game for Mobile</h2>
+  </div>
+
+</body>
+</html>

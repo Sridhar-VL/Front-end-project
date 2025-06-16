@@ -1,0 +1,51 @@
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background-color: bisque;
+}
+.Game{
+display: none;
+}
+.Game img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.Game h2{
+    margin-top: 10px;
+}
+.Desktop{
+    display:block;
+}
+@media(Condition){
+    /*Css Rules*/
+}
+/*Laptop*/
+@media(max-width:1200px){
+    .Game{
+        display: none;
+    }
+    .Laptop{
+display: block;
+    }
+}
+/*Tablet*/
+@media(max-width:900px){
+    .Game{
+        display:none;
+    }
+    .Tablet{
+        display:block;
+    }
+}
+/*Mobile*/
+@media(max-width:600px){
+    .Game{
+        display:none;
+    }
+    .Mobile{
+        display:block;
+    }
+}

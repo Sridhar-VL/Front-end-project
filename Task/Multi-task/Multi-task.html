@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Feature App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      background-color: #f0f0f0;
+    }
+    .box {
+      background-color: rgb(186, 186, 186);
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      max-width: 400px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      background-color: #007BFF;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    .output {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <!--1.Head/Tails-->
+  <div class="box">
+    <h3>1. Head or Tails</h3>
+    <button onclick="flipCoin()">Flip</button>
+    <div id="coinResult" class="output"></div>
+  </div>
+
+  <!--2.Welcome Name-->
+  <div class="box">
+    <h3>2. Welcome Message</h3>
+    <input type="text" id="nameInput" placeholder="Enter your name" oninput="showWelcome()">
+    <div id="welcomeMsg" class="output"></div>
+  </div>
+
+  <!--3.Search Typing-->
+  <div class="box">
+    <h3>3. Live Search Display</h3>
+    <input type="text" id="searchInput" placeholder="Type to search..." oninput="showSearch()">
+    <div id="searchOutput" class="output"></div>
+  </div>
+
+  <!--4.Counter-->
+  <div class="box">
+    <h3>4. Counter</h3>
+    <div id="counterValue" class="output">Value: 0</div>
+    <button onclick="changeCount(1)">+ Increase</button>
+    <button onclick="changeCount(-1)">- Decrease</button>
+    <button onclick="resetCount()">Reset</button>
+  </div>
+  </center>
+</body>
+  <script src="./Multi-task.js"> </script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bill Calculator</title>
+  <link rel="stylesheet" href="./bill.css">
+</head>
+<body>
+<!--Bill Amount-->
+  <div class="container">
+    <h3>Bill total</h3>
+    <input type="type" id="bill" value="" placeholder="$ Enter your bill amount">
+<!--Tips-->
+    <h3>Tip </h3>
+    <input type="type" id="tip" value="" placeholder="% Enter the Tip Percentage">
+<!--Counting the People-->
+
+    <div class="main-total"><div class="total"><h3>People</h3>
+    <button onclick="changePeople(-1)">-</button>
+    <span id="people">1</span>
+    <button onclick="changePeople(1)">+</button></div>
+
+     <div class="total1"><h3>Total per Person:</h3>
+  <p id="result"></p></div> </div>
+  </div>
+
+</body>
+ <script src="bill.js"></script>
+</html>

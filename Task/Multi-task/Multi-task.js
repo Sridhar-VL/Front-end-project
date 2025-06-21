@@ -1,6 +1,6 @@
 //flipcoin
 function flipCoin() {
-  const value = Math.floor(Math.random() * 2); // 0 or 1
+  const value = Math.floor(Math.random() * 2); 
   let result;
 
   switch (value) {

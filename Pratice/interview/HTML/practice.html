@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hari</h1>
+    <h2>Kathir</h2>
+    <input type="color" id="colorInput" addEventListener="input">
+    <h1>Background Color</h1>
+    <input type="color" class="colorInput1" oninput="changeColor(value)">
+    <button >Gaming</button>
+    <button>Tech</button>
+    <button>Music</button>
+    
+</body>
+<script>
+    const colorInput=document.getElementById('colorInput')
+    colorInput.addEventListener('input', function(event) {
+        document.body.style.color = event.target.value;
+    });
+    function changeColor(value){
+let backColr=document.querySelector('.colorInput1').value;
+document.body.style.backgroundColor=backColr;
+    }
+
+</script>
+</html>

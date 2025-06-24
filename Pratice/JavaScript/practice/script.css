@@ -1,5 +1,9 @@
  body{
-    display: flex;
+   display: inline-block;
+ }
+ hr{
+  
+  border: 1px solid black;
  }
  .Youtube{
     margin: 10px;

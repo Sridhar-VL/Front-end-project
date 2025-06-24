@@ -32,3 +32,46 @@ function handleKey(event) {
  }
 
 }
+ //GetElementbyId
+    function valid(){
+    let value=document.querySelector('#js-follow-btn');
+    if(value.innerText==="Follow"){
+        value.innerText="Unfollow";
+    }
+    else{
+        value.innerText="Follow";
+    }
+    
+}
+//GetElementbyclass
+function valclass(){
+    let value=document.querySelector('.js-follow-btn');
+    if(value.innerText==="Follow"){
+        value.innerText="Unfollow";
+    }
+    else{
+        value.innerText="Follow";
+    }
+    
+}
+//element set attribute
+const imageElement = document.querySelector('img'); // Select the image element
+if (imageElement) { // Check if the element was found
+    imageElement.setAttribute("src","../images/Lamborghini.webp");
+} else {
+    console.error("Image element not found.");
+}
+//dog random img
+const URL = "https://dog.ceo/api/breeds/image/random";
+const buttonElement = document.getElementById('btn-get-img'); 
+
+
+    buttonElement.addEventListener('click', function() {
+        fetch(URL)
+            .then((response) => response.json())
+            .then((json) => console.log(json.message));
+    });
+
+    //Super hero random img
+    const url="https://superheroapi.com/api/2441bb06aecda78397c0108a3f599562";
+    fetch(url). then(response => response.json()) . then (json=> console.log(json.data));

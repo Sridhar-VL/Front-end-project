@@ -72,6 +72,4 @@ const buttonElement = document.getElementById('btn-get-img');
             .then((json) => console.log(json.message));
     });
 
-    //Super hero random img
-    const url="https://superheroapi.com/api/2441bb06aecda78397c0108a3f599562";
-    fetch(url). then(response => response.json()) . then (json=> console.log(json.data));
+   

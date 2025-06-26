@@ -1,0 +1,39 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:500px;
+    height:350px;
+    margin:100px auto;
+    border:1px black;
+    box-shadow: 5px 5px 5px 5px grey;
+    position:relative;
+}
+.container-left{
+    position:absolute;
+    left:0;
+    top:150px;
+    background-color: black;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    color: white;
+    cursor:pointer;
+}
+.container-right{
+    position:absolute;
+    right:0;
+    top:150px;
+    background-color: black;
+    border-radius: 50%;
+    height:50px;
+    width:50px;
+    color: white;
+    cursor:pointer;
+}
+#image{
+    width: 500px;
+    height: 350px;
+}

@@ -7,7 +7,7 @@ function showimage(index){
 setInterval(()=>{
     imageindex=(imageindex+1)%images.length;
     showimage(imageindex);
-},3000);
+},7000);
 function right(){
     imageindex=(imageindex + 1) % images.length;
     showimage(imageindex);

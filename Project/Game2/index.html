@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Karate Fighter: Real Battles</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      background: #e91e63;
+      margin: 0;
+      padding: 20px;
+      font-size: 2rem;
+    }
+
+    .game-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    .fighter {
+      width: 120px;
+      height: 120px;
+      margin: 0 50px;
+      background-size: cover;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .player {
+      background-image: url('https://i.ibb.co/GtMqq65/karate-player.png'); /* Replace with your sprite */
+    }
+
+    .enemy {
+      background-image: url('https://i.ibb.co/QHMJkm4/karate-enemy.png'); /* Replace with your sprite */
+    }
+
+    .health-bars {
+      margin-top: 20px;
+      font-size: 1.2rem;
+    }
+
+    .controls {
+      margin-top: 20px;
+    }
+
+    .controls button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 10px;
+      cursor: pointer;
+      background: #ffc107;
+      border: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .controls button:hover {
+      background: #ff9800;
+    }
+
+    #result {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    #round {
+      margin: 10px;
+      font-size: 1.2rem;
+      color: #00e676;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Karate Fighter: Real Battles</h1>
+  <div id="round">Round: 1</div>
+
+  <div class="game-container">
+    <div id="player" class="fighter player"></div>
+    <div id="enemy" class="fighter enemy"></div>
+  </div>
+
+  <div class="health-bars">
+    Player Health: <span id="player-health">100</span> |
+    Enemy Health: <span id="enemy-health">100</span>
+  </div>
+
+  <div class="controls">
+    <button onclick="attack()">Attack 🥋</button>
+    <button onclick="defend()">Defend 🛡️</button>
+  </div>
+
+  <div id="result"></div>
+
+  <!-- Sounds -->
+  <audio id="punch-sound" src="https://www.soundjay.com/human/punch-in-face-1.mp3"></audio>
+  <audio id="kick-sound" src="https://www.soundjay.com/human/kick-in-groin-1.mp3"></audio>
+  <audio id="win-sound" src="https://www.soundjay.com/human/cheering-crowd.mp3"></audio>
+  <audio id="lose-sound" src="https://www.soundjay.com/human/boo-01.mp3"></audio>
+
+  <script>
+    let playerHealth = 100;
+    let enemyHealth = 100;
+    let round = 1;
+
+    function updateHealth() {
+      document.getElementById("player-health").textContent = Math.max(0, playerHealth);
+      document.getElementById("enemy-health").textContent = Math.max(0, enemyHealth);
+    }
+
+    function playSound(id) {
+      const sound = document.getElementById(id);
+      sound.currentTime = 0;
+      sound.play();
+    }
+
+    function attack() {
+      let playerDamage = Math.floor(Math.random() * 20) + 5;
+      let enemyDamage = Math.floor(Math.random() * 15);
+
+      enemyHealth -= playerDamage;
+      playerHealth -= enemyDamage;
+
+      animate('player');
+      animate('enemy');
+      playSound("punch-sound");
+
+      updateHealth();
+      checkWinner();
+    }
+
+    function defend() {
+      let reducedDamage = Math.floor(Math.random() * 5);
+      playerHealth -= reducedDamage;
+
+      animate('enemy');
+      playSound("kick-sound");
+
+      updateHealth();
+      checkWinner();
+    }
+
+    function animate(id) {
+      const fighter = document.getElementById(id);
+      fighter.style.transform = 'scale(1.2)';
+      setTimeout(() => {
+        fighter.style.transform = 'scale(1)';
+      }, 200);
+    }
+
+    function checkWinner() {
+      if (playerHealth <= 0 && enemyHealth <= 0) {
+        document.getElementById("result").textContent = "It's a draw!";
+        playSound("lose-sound");
+        nextRound();
+      } else if (playerHealth <= 0) {
+        document.getElementById("result").textContent = "You lost this round! 😞";
+        playSound("lose-sound");
+        nextRound();
+      } else if (enemyHealth <= 0) {
+        document.getElementById("result").textContent = "You win this round! 🏆";
+        playSound("win-sound");
+        nextRound();
+      }
+    }
+
+    function nextRound() {
+      setTimeout(() => {
+        round++;
+        playerHealth = 100;
+        enemyHealth = 100;
+        updateHealth();
+        document.getElementById("result").textContent = "";
+        document.getElementById("round").textContent = `Round: ${round}`;
+      }, 2000);
+    }
+  </script>
+</body>
+</html>

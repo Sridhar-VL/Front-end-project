@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login - Memory Card Game</title>
+<style>
+    body {
+        font-family:  serif;
+        background: #222;
+        color: #fff;
+        text-align: center;
+        margin-top: 100px;
+    }
+    .login-box {
+        background: #333;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        margin: auto;
+    }
+    input {
+        padding: 10px;
+        margin: 10px;
+        width: 80%;
+        border: none;
+        border-radius: 4px;
+    }
+    button {
+        padding: 10px;
+        background: #ff9800;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button:hover {
+        background: #e68a00;
+    }
+    .best-score {
+        margin-top: 15px;
+        font-size: 18px;
+        color: #ff9800;
+    }
+</style>
+</head>
+<body>
+
+<h1>Memory Card Game</h1>
+   <div id="loginPage">
+    <h1>Welcome to Memory Card Game</h1>
+    <p id="welcomeBack" class="hidden"></p>
+    <input type="text" id="playerName" placeholder="Enter your name">
+    <a href="./index.html"><button id="startBtn">Start Game</button></a>
+</div>
+
+<script>
+    // Check if user already logged in before
+    window.onload = function() {
+        let savedUser = localStorage.getItem("playerName");
+        let bestScore = localStorage.getItem("bestScore");
+
+        if (savedUser) {
+            document.getElementById("username").value = savedUser;
+            if (bestScore) {
+                document.getElementById("bestScoreDisplay").innerText = 
+                    `Welcome back, ${savedUser}! 🏆 Best Score: ${bestScore} moves`;
+            } else {
+                document.getElementById("bestScoreDisplay").innerText = 
+                    `Welcome back, ${savedUser}! No score yet.`;
+            }
+        }
+    }
+
+    function login() {
+        let username = document.getElementById("username").value.trim();
+        if (username === "") {
+            alert("Please enter your name.");
+            return;
+        }
+        localStorage.setItem("playerName", username);
+        window.location.href = "game.html"; // Go to the game page
+    }
+</script>
+
+</body>
+</html>

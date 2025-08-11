@@ -1,0 +1,13 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background: url();
+}
+label{
+    max-width: 100%;
+
+}
+input{
+    margin: 10px;
+}

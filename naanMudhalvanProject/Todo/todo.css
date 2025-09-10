@@ -1,0 +1,45 @@
+
+  body { 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+    background: #f9f9f9; 
+  }
+  h1 { 
+    color: #333; 
+  }
+  #taskInput { 
+    padding: 10px; 
+    width: 70%; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  #addBtn { 
+    padding: 10px; 
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  #addBtn:hover {
+    background: #218838;
+  }
+  ul { 
+    list-style: none; 
+    padding: 0; 
+  }
+  li { 
+    padding: 8px; 
+    background: #fff; 
+    margin: 5px 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  li.completed { 
+    text-decoration: line-through; 
+    color: gray; 
+  }
+

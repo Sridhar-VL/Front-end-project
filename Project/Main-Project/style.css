@@ -1,55 +1,195 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #222;
-    color: #fff;
-    text-align: center;
+/* =========================
+   RESET & GLOBAL
+========================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.controls { margin: 15px; }
+body {
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
 
+    background: linear-gradient(
+        -45deg,
+        #1b3b6f,
+        #ebf1fc,
+        #102f5e
+    );
+    background-size: 400% 400%;
+    animation: bgMove 15s ease infinite;
+}
+
+/* =========================
+   HEADINGS & TEXT
+========================= */
+h1 {
+    margin: 20px 0 10px;
+}
+
+p {
+    margin: 6px 0;
+}
+
+/* =========================
+   CONTROLS
+========================= */
+.controls {
+    margin: 15px auto;
+    padding: 10px;
+}
+
+select,
+button {
+    padding: 8px 12px;
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    background: #1e90ff;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover,
+select:hover {
+    background: #4fa3ff;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   LEADERBOARD
+========================= */
+.leaderboard {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 340px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 14px;
+    padding: 15px;
+}
+
+.leaderboard h2 {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.leaderboard ol {
+    list-style: none;
+    padding: 0;
+}
+
+.leaderboard li {
+    background: rgba(255, 255, 255, 0.25);
+    margin: 6px 0;
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* =========================
+   GAME BOARD
+========================= */
 .board {
     display: grid;
-    gap: 10px;
+    gap: 14px;
     justify-content: center;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
+/* =========================
+   CARD
+========================= */
 .card {
     width: 80px;
-    height: 100px;
-    perspective: 1000px;
+    height: 105px;
+    perspective: 1200px;
     cursor: pointer;
 }
 
+/* Card inner */
 .card-inner {
-    position: relative;
     width: 100%;
     height: 100%;
-    transition: transform 0.6s;
+    position: relative;
     transform-style: preserve-3d;
+    transition: transform 0.65s ease, box-shadow 0.4s ease;
 }
 
+
+
+/* Flip animation */
 .flipped .card-inner {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
 }
 
-.card-front, .card-back {
+/* Card faces */
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    border-radius: 8px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 32px;
+    user-select: none;
 }
 
-.card-front { background: #ff9800; transform: rotateY(180deg); }
-.card-back { background: #607d8b; }
+/* Front side (emoji) */
+.card-front {
+    background: linear-gradient(135deg, #ffffff, #dbeafe, #93c5fd);
+    color: #102f5e;
+    transform: rotateY(180deg);
+}
 
-select, button {
-    padding: 8px;
-    border: none;
-    border-radius: 4px;
+/* Back side */
+.card-back {
+    background: linear-gradient(135deg, #0d1b2a, #1b3b6f);
+    color: #ffffff;
+    font-size: 26px;
+}
+
+/* Matched card animation */
+.matched .card-inner {
+    animation: matchPulse 0.7s ease;
+    box-shadow: 0 0 30px rgba(100, 200, 255, 0.9);
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+@keyframes bgMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes matchPulse {
+    0%   { transform: scale(1) rotateY(180deg); }
+    50%  { transform: scale(1.15) rotateY(180deg); }
+    100% { transform: scale(1) rotateY(180deg); }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    .card {
+        width: 65px;
+        height: 90px;
+    }
+
+    .card-front,
+    .card-back {
+        font-size: 26px;
+    }
 }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Card Game</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<h1>Memory Card Game</h1>
+
+<p>Player: <span id="currentPlayer"></span></p>
+<p>Best Score: <span id="bestScore">--</span></p>
+
+<div class="controls">
+    <label>Difficulty:</label>
+    <select id="difficulty">
+        <option value="easy">Easy (6 pairs)</option>
+        <option value="medium">Medium (8 pairs)</option>
+        <option value="hard">Hard (10 pairs)</option>
+    </select>
+
+    <label>Category:</label>
+    <select id="category">
+        <option value="fruits">🍎 Fruits</option>
+        <option value="animals">🐶 Animals</option>
+        <option value="vegetables">🥕 Vegetables</option>
+        <option value="humans">😀 Humans</option>
+    </select>
+
+    <button id="restart">Restart</button>
+
+    <div>
+        Moves: <span id="moves">0</span> |
+        Matches: <span id="matches">0</span> |
+        Time: <span id="time">00:00</span>
+    </div>
+</div>
+
+<!-- Leaderboard -->
+<div class="leaderboard">
+    <h2>🏆 Leaderboard</h2>
+    <ol id="leaderboardList">
+        <li>No scores yet</li>
+    </ol>
+</div>
+
+<div id="board" class="board"></div>
+
+<script src="./script.js"></script>
+</body>
+</html>
